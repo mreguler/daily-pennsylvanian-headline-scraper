@@ -1,3 +1,9 @@
+# Updates to the Scraper for The Daily Pennsylvanian Columns Section
+
+The scraper's `scrape_data_point` function was updated to fetch headlines from the "Columns" section of The Daily Pennsylvanian website. Previously, it scraped the main headline from the homepage. The new implementation targets the first headline within the "Columns" section by modifying the URL to `https://www.thedp.com/section/columns` and searching for the first `h3` tag with the class `standard-link`.
+
+---
+
 # Basic Git Scraper Template
 
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
